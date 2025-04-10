@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Registration & Info Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header, section, footer {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        caption {
+            caption-side: bottom;
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9e9e9;
+            color: #333;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        /* Image styling */
+        figure {
+            margin: 20px 0;
+            text-align: center; /* Center the image and caption */
+        }
+        figure img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        figcaption {
+            margin-top: 8px;
+            color: #555;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        /* Form styling */
+        form {
+            border: 1px solid #ccc;
+            padding: 25px;
+            border-radius: 5px;
+            background-color: #fdfdfd;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #0056b3;
+            padding: 0 10px;
+        }
+        label {
+            display: block; /* Makes labels appear on their own line */
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: calc(100% - 22px); /* Adjusts width for padding and border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Includes padding and border in element's total width and height */
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        /* Aligns radio/checkbox labels vertically with the input */
+        .choice-group label {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        .choice-group div { /* Spaces out choices */
+             margin-bottom: 8px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        /* Styles for required field markers (optional) */
+        label.required::after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Website with Required Elements</h1>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="list-heading">
+            <h2 id="list-heading">Project Phases</h2>
+            <ol type="I">
+                <li>Planning and Requirement Analysis</li>
+                <li>Design and Prototyping</li>
+                <li>Development and Implementation</li>
+                <li>Testing and Quality Assurance</li>
+                <li>Deployment and Launch</li>
+                <li>Maintenance and Support</li>
+            </ol>
+        </section>
+
+        <section aria-labelledby="image-heading">
+            <h2 id="image-heading">Inspirational Image</h2>
+            <figure>
+                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                     alt="Diverse team collaborating around a table with laptops and notes">
+                <figcaption>Team collaboration - Image by fauxels from Pexels.com</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="contacts-heading">
+            <h2 id="contacts-heading">Contact List</h2>
+            <table>
+                <caption>List of Key Contacts (Dummy Data)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kwame Mensah</td>
+                        <td>15 Spintex Road, Accra</td>
+                        <td>+233 24 111 2222</td>
+                        <td>k.mensah@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Abena Asante</td>
+                        <td>42 Osu Avenue, Accra</td>
+                        <td>+233 55 333 4444</td>
+                        <td>a.asante@gmail.org</td>
+                    </tr>
+                    <tr>
+                        <td>Femi Adebayo</td>
+                        <td>8 Airport Residential Area, Accra</td>
+                        <td>+233 20 555 6677</td>
+                        <td>femi.a@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Esi Thompson</td>
+                        <td>Plot 12, East Legon, Accra</td>
+                        <td>+233 27 888 9900</td>
+                        <td>esi.thompson@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Yaw Owusu</td>
+                        <td>7 Ring Road Central, Accra</td>
+                        <td>+233 50 123 4567</td>
+                        <td>y.owusu@userprovider.org</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="registration-heading">
+            <h2 id="registration-heading">User Registration</h2>
+            <form action="#" method="post" id="regForm">
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <p>
+                        <label for="name" class="required">Full Name:</label>
+                        <input type="text" id="name" name="fullName" placeholder="Enter your full name" required>
+                        </p>
+                    <p>
+                        <label for="email" class="required">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </p>
+                    <p>
+                        <label for="password" class="required">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required minlength="8">
+                        </p>
+                    <p>
+                        <label for="dob" class="required">Date of Birth:</label>
+                        <input type="date" id="dob" name="dateOfBirth" required max="2010-04-10"> </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <p>
+                        <label for="accountType" class="required">Account Type:</label>
+                        <select id="accountType" name="accountType" required>
+                            <option value="" disabled selected>-- Please select an option --</option>
+                            <option value="personal">Personal</option>
+                            <option value="business">Business</option>
+                            <option value="nonprofit">Non-Profit</option>
+                        </select>
+                    </p>
+
+                    <div class="choice-group">
+                        <p><strong class="required">Preferred Contact Method:</strong></p> <div>
+                            <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                            <label for="contactEmail">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                            <label for="contactPhone">Phone</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contactNone" name="contactMethod" value="none">
+                            <label for="contactNone">No Contact</label>
+                        </div>
+                        </div>
+
+                    <div class="choice-group">
+                        <p><strong>Interests (Select all that apply):</strong></p>
+                        <div>
+                            <input type="checkbox" id="interestTech" name="interests[]" value="technology">
+                            <label for="interestTech">Technology</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interestArts" name="interests[]" value="arts">
+                            <label for="interestArts">Arts & Culture</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interestSports" name="interests[]" value="sports">
+                            <label for="interestSports">Sports & Fitness</label>
+                        </div>
+                          <div>
+                            <input type="checkbox" id="interestTravel" name="interests[]" value="travel">
+                            <label for="interestTravel">Travel</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Register Account</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sparkle. All rights reserved.</p>
+        <p>Location: Accra, Ghana | Current Time: Thursday, April 10, 2025 at 7: PM GMT</p>
+    </footer>
+
+</body>
+
+</html>
